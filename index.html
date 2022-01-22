@@ -7,13 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+
     <title>panda</title>
 </head>
 
 <body>
     <header>
+        <!-- nav bar -->
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container ">
                 <a class="navbar-brand " href="#"><img src="./images/logo.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -38,7 +40,9 @@
                 </div>
             </div>
         </nav>
-        <section class="mt-5 ">
+
+        <!-- carousel -->
+        <section class="mt-5 pt-5 container">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
@@ -48,10 +52,10 @@
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                         aria-label="Slide 3"></button>
                 </div>
-                <div class="carousel-inner container">
+                <div class="carousel-inner backg-hot-pink p-5 rounded-3 container">
                     <div class="carousel-item active">
                         <div class="row">
-                            <div class="col-lg-7">
+                            <div class="col-12 col-lg-7">
                                 <div class="h-100 d-flex flex-column justify-content-center">
                                     <h1>Cool Dude Headphone</h1>
                                     <p>
@@ -59,11 +63,20 @@
                                         in
                                         front of funky world.</p>
                                     <h1>$600</h1>
-                                    <button type="button" class="btn btn-primary">Primary</button>
+                                    <div class="d-flex flex-row">
+                                        <button type="button" class="pink-button btn border-0 text-white">Primary <svg
+                                                xmlns="http://www.w3.org/2000/svg" style="width: 24px; height: 24px;"
+                                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                            </svg> </button>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-lg-5">
-                                <img src="./images/banner-images/headphone.png" class="d-block w-100" alt="...">
+                            <div class="col-12 col-lg-5">
+                                <div class="mt-5 mt-sm-5 mt-md-5">
+                                    <img src="./images/banner-images/headphone.png" class="d-block w-100" alt="...">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -77,11 +90,15 @@
                                         in
                                         front of funky world.</p>
                                     <h1>$600</h1>
-                                    <button type="button" class="btn btn-primary">Primary</button>
+                                    <div class="d-flex flex-row">
+                                        <button type="button" class="btn btn-primary bl">Primary</button>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-lg-5">
-                                <img src="./images/banner-images/tv.png" class="d-block w-100" alt="...">
+                                <div class="mt-5 mt-sm-5 mt-md-5">
+                                    <img src="./images/banner-images/tv.png" class="d-block w-100" alt="...">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -95,11 +112,15 @@
                                         in
                                         front of funky world.</p>
                                     <h1>$600</h1>
-                                    <button type="button" class="btn btn-primary">Primary</button>
+                                    <div class="d-flex flex-row">
+                                        <button type="button" class="btn btn-primary bl">Primary</button>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-lg-5">
-                                <img src="./images/banner-images/xbox.png" class="d-block w-100" alt="...">
+                                <div class="mt-5 mt-sm-5 mt-md-5">
+                                    <img src="./images/banner-images/xbox.png" class="d-block w-100" alt="...">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -120,80 +141,89 @@
     </header>
 
     <main>
-        <section class="container">
+        <section class="container ">
             <h1 class="mt-4 pt-5">Categories</h1>
             <div class="row gx-3 mt-4">
-                <div class="col-lg-4">
-                    <div class=" rounded-3 d-flex align-items-center justify-content-around bg-primary">
+                <div class="col-lg-4 col-md-6 ">
+                    <div
+                        class="mt-2 mt-xs-2 mt-md-2 mt-sm-2 rounded-3 d-flex align-items-center justify-content-around backg-yellow p-1">
                         <p class="fs-1 text-white">WAtch</p>
                         <img width="94px" height="94px" src="./images/categories/watch.png" alt="">
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="rounded-3 d-flex align-items-center justify-content-around bg-primary">
+                <div class="col-lg-4 col-md-6">
+                    <div
+                        class="mt-2 mt-xs-2 mt-md-2 mt-sm-2 rounded-3 d-flex align-items-center justify-content-around backg-pink p-1">
                         <p class="fs-1 text-white">Bag</p>
                         <img width="94px" height="94px" src="./images/categories/bag.png" alt="">
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="rounded-3 d-flex align-items-center justify-content-around bg-primary">
+                <div class="col-lg-4 col-md-6">
+                    <div
+                        class="mt-2 mt-xs-2 mt-md-2 mt-sm-2 rounded-3 d-flex align-items-center justify-content-around backg-blue p-1">
                         <p class="fs-1 text-white">Shoes</p>
                         <img width="94px" height="94px" src="./images/categories/shoes.png" alt="">
                     </div>
                 </div>
             </div>
         </section>
-        <section class="container mt-5">
-            <h1 class="mb-3">Shoes</h1>
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                    <div class="shadow p-3 mb-5 bg-body rounded card h-100 border-0">
-                        <img src="./images/shoes/shoe-1.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h4 class="card-title">Reebok Dart Men’s Shoes</h4>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to additional.
+        <section class="container-flex pb-5 backg-gray h-67">
+            <section class="container mt-5">
+                <h1 class="mb-3">Shoes</h1>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="shadow p-3 mb-5 bg-body rounded card h-100 border-0">
+                            <img src="./images/shoes/shoe-1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">Reebok Dart Men's Shoes</h4>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in
+                                    to additional.
 
-                            </p>
-                            <h4 class="card-title">$500</h4>
+                                </p>
+                                <h4 class="card-title">$500</h4>
+                            </div>
+                            <div class="footer">
+                                <button type="button" class="btn btn-primary">Primary</button>
+                            </div>
                         </div>
-                        <div class="footer">
-                            <button type="button" class="btn btn-primary">Primary</button>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This card has supporting text below as a natural lead-in to
+                                    additional
+                                    content.</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Last updated 3 mins ago</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to
+                                    additional content. This card has even longer content than the first to show that
+                                    equal
+                                    height action.</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-primary">Primary</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This card has supporting text below as a natural lead-in to additional
-                                content.</p>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-muted">Last updated 3 mins ago</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This card has even longer content than the first to show that equal
-                                height action.</p>
-                        </div>
-                        <div class="card-footer">
-                            <button type="button" class="btn btn-primary">Primary</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </section>
         </section>
-        <section class="container p-5 my-3">
+        <section class="container ">
             <form>
-                <div class="mb-3 d-flex flex-column align-items-center ">
+                <div class="mb-3 d-flex flex-column align-items-center backg-hot-pink py-5 my-5 ">
                     <h1>LET'S STAY IN TOUCH</h1>
                     <p>Get updates on sales, specials and more</p>
                     <div class="w-30 d-flex justify-content-center align-items-center">
@@ -207,7 +237,7 @@
         </section>
     </main>
     <footer>
-
+        <p class="text-center">©2020. Panda Commerce. All rights reserved. Sofia, Bulgaria.</p>
     </footer>
     <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
